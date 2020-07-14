@@ -7,8 +7,7 @@ class Node:
 class BST:
     def __init__(self):
         self.root = None
-
-        
+       
     def insert(self,node,rt):
         if rt == None:
             rt = node
@@ -19,7 +18,6 @@ class BST:
                 rt.right = self.insert(node,rt.right)
         return rt
                     
-
     def remove(self,val):
         print(self.root.val)
 
